@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+        <head>
+                <base href="/localhost" />
+                <meta charset="UTF-8" />
+                <title><?= $titulek ?></title>
+                <meta name="description" content="<?= $popis ?>" />
+                <meta name="keywords" content="<?= $klicova_slova ?>" />
+                <link rel="stylesheet" href="style.css" type="text/css"/>
+        </head>
+
+        <body>
+                <header>
+                        <h1>Moon Sky Overlay</h1>
+                </header>
+
+                <nav>
+                        <ul>
+                                <li><a href="uvod">Úvod</a></li>
+                                <li><a href="administrace/serialy">Serialy</a></li>
+                                <li><a href="administrace/database">Database</a></li>
+                        </ul>
+                </nav>
+                <br clear="both" />
+
+                <article>
+                        <?php $this->kontroler->vypisPohled(); ?>
+                </article>
+
+                <footer>
+                        <p>&copy Moon Sky Overlay 2017-2018. Web Developed by
+                        <a href="http://www.wks.cz" target="_blank">WKS</a>.</p>
+                </footer>
+        </body>
+</html>
